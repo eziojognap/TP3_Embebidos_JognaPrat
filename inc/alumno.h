@@ -21,7 +21,8 @@ extern "C" {
 
 /************************************* TYPEDEFS ***************************************************/
 
-typedef struct alumno_s *puntero_alumno_s; //!< puntero_alumno_s es un puntero al tipo de datos estructura alumno_s que esta definida en alumno.c
+typedef struct alumno_s *puntero_alumno_s; //!< puntero_alumno_s es un puntero al tipo de datos
+                                            ///< estructura alumno_s que esta definida en alumno.c
 
 /************************************* EXPORTED VARIABLES *****************************************/
 
