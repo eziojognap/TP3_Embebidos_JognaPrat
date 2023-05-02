@@ -21,8 +21,7 @@ extern "C" {
 
 /************************************* TYPEDEFS ***************************************************/
 
-typedef struct alumno_s *alumno_t; //!< Alumno_t es un puntero al tipo de datos estructura alumno_s
-                                   //!< que esta definida en alumno.c
+typedef struct alumno_s *puntero_alumno_s; //!< puntero_alumno_s es un puntero al tipo de datos estructura alumno_s que esta definida en alumno.c
 
 /************************************* EXPORTED VARIABLES *****************************************/
 
@@ -33,7 +32,7 @@ typedef struct alumno_s *alumno_t; //!< Alumno_t es un puntero al tipo de datos 
 /// @param nombre
 /// @param documento
 /// @return
-alumno_t CrearAlumno(char *apellido, char *nombre, int documento);
+puntero_alumno_s CrearAlumno(char *apellido, char *nombre, int documento);
 
 // Comento las siguientes dos funciones porque no las usamos
 /// Función para obtener el nombre completo
@@ -47,7 +46,7 @@ alumno_t CrearAlumno(char *apellido, char *nombre, int documento);
 /// @param cadena Puntero a la cadena resultado
 /// @param espacio Espacio disponible en la cadena de resultado
 /// @return
-int Serializar(alumno_t alumno, char cadena[], uint32_t espacio);
+int Serializar(puntero_alumno_s alumno, char cadena[], uint32_t espacio);
 
 #ifdef __cplusplus /*Con esto se cierra la la def condicional para compilar en c codigo que es de  \
                       c++*/

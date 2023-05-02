@@ -29,7 +29,7 @@
 
 int main(void) {
 
-    const alumno_t yo = CrearAlumno("Jogna Prat", "Ezio", 41649861);
+    const puntero_alumno_s yo = CrearAlumno("Jogna Prat", "Ezio", 41649861);
 
     char cadena_datos_alumno[128];
 
